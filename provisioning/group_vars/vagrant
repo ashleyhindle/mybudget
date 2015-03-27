@@ -1,0 +1,6 @@
+---
+mysql_database: mybudget
+mysql_username: mybudget
+mysql_password: mybudget
+mysql_root_username: root
+mysql_root_password: supersecure
