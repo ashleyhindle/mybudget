@@ -1,15 +1,15 @@
 ---
 
-- name: Vagrant - Install NGINX, Memcache, MySQL and PHP-FPM
+- name: Vagrant - Install NGINX, MySQL and PHP-FPM
   hosts: vagrant
   remote_user: root
   sudo: yes
   roles:
-    - nginx
-    - php-fpm
-    - mysql
-    - composer
-    - memcache
-    - beanstalk
-    - geoip
-    - mybudget
+      - nginx
+      - php5-fpm
+      - mysql
+#      - composer
+#      - memcache
+#      - beanstalk
+#      - geoip
+#      - mybudget

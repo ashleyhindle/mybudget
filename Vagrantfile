@@ -9,8 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     config.vm.network :public_network
     config.vm.network "forwarded_port", guest: 80, host: 9080
-
-    # Share SSH locally by default
+    config.vm.network "forwarded_port", guest: 3306, host: 9006
     config.vm.network "forwarded_port", guest: 22, host: 9022, id: "ssh", auto_correct: true
 
     config.vm.provider "virtualbox" do |v|
